@@ -3,6 +3,11 @@
 <p>si, esta es</p>
 
 
+<h2>¿Who do you want to contact?</h2>
+<form action="/contact" method="get">
+  <input type="text" name="member"   value="<%= params[:member] %>" placeholder="Who are you looking for?" >
+  <input type="submit">
+</form>
 
 <h2>Meet our team</h2>
 <ol>
@@ -10,3 +15,5 @@
     <li><%= member.capitalize %></li>
   <% end %>
 </ol>
+
+<%= link_to "Go bach home", root_path %>
